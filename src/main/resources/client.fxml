@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="580.0" prefWidth="378.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.controller.ClientController">
+   <children>
+      <JFXTextArea fx:id="clientTextArea" layoutX="25.0" layoutY="83.0" prefHeight="405.0" prefWidth="323.0" style="-fx-background-color: gray;" unFocusColor="#75727209" />
+      <TextField fx:id="clientTextField" layoutX="25.0" layoutY="502.0" prefHeight="38.0" prefWidth="217.0" />
+      <JFXButton layoutX="265.0" layoutY="502.0" onAction="#clientSendBtn" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: green;" text="Send" />
+      <Label layoutX="36.0" layoutY="26.0" prefHeight="35.0" prefWidth="73.0" text="Client " textFill="RED">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblAvailability" layoutX="153.0" layoutY="93.0" prefHeight="35.0" prefWidth="90.0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="43.0" layoutY="93.0" prefHeight="35.0" prefWidth="110.0" text="Availability : ">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
